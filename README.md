@@ -1,4 +1,3 @@
-```markdown
 # 🏦 Análise de Risco de Crédito - Sistema Preditivo
 
 [![GitHub last commit](https://img.shields.io/github/last-commit/felipesbonatti/Analise-de-Risco-de-Credito?style=flat-square)](https://github.com/felipesbonatti/Analise-de-Risco-de-Credito)
@@ -46,11 +45,7 @@ Sistema preditivo para avaliação de risco de crédito em instituições financ
 | Random Forest         | 0.91      | 0.85     | 0.89     |
 | Regressão Logística   | 0.89      | 0.82     | 0.87     |
 
-### 🌐 API de Predição
-```bash
-curl -X POST http://api.riscocredito.com/predict \
-  -H "Content-Type: application/json" \
-  -d '{"idade": 35, "renda": 6500, "historico_credito": "bom"}'
+
 ```
 
 ---
@@ -66,6 +61,17 @@ curl -X POST http://api.riscocredito.com/predict \
   <a href="https://www.sqlalchemy.org/"><img src="https://img.shields.io/badge/SQLAlchemy-1C1C1C?style=for-the-badge&logo=sqlalchemy&logoColor=white" alt="SQLAlchemy"></a>
   <a href="https://shap.readthedocs.io/"><img src="https://img.shields.io/badge/SHAP-FF6F61?style=for-the-badge&logo=python&logoColor=white" alt="SHAP"></a>
 </div>
+
+---
+
+## 🧩 Estrutura do Projeto
+
+
+
+---
+
+
+```
 
 ---
 
@@ -93,5 +99,3 @@ Distribuído sob licença MIT. Veja [LICENSE](LICENSE) para mais detalhes.
     <img src="https://img.shields.io/github/stars/felipesbonatti/Analise-de-Risco-de-Credito?style=social" alt="GitHub Stars">
   </a>
 </p>
-```
-
