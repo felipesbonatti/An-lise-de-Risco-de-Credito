@@ -73,7 +73,7 @@ curl -X POST http://api.riscocredito.com/predict \
 
 ```
 
----
+
 
 ## 📊 Resultados e Impacto
 
