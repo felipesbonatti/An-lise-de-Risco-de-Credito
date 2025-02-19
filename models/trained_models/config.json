@@ -1,0 +1,23 @@
+# src/create_config.py
+import json
+
+def create_config(feature_names, threshold=0.5, risk_categories=None):
+    """
+    Cria um arquivo de configuração para o modelo.
+    """
+    if risk_categories is None:
+        risk_categories = ["Baixo Risco", "Alto Risco"]
+
+    config = {
+        "feature_names": feature_names,
+        "threshold": threshold,
+        "risk_categories": risk_categories
+    }
+
+    with open("./models/trained_models/config.json", "w") as f:
+        json.dump(config, f, indent=4)
+    print("Arquivo de configuração salvo em ./models/trained_models/config.json")
+
+# Exemplo de uso:
+feature_names = ['idade', 'renda', 'divida_total', 'historico_credito']
+create_config(feature_names)
