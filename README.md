@@ -12,13 +12,9 @@
 
 ## 📌 Visão Geral do Projeto
 
-Sistema preditivo para avaliação de risco de crédito em instituições financeiras, desenvolvido com técnicas avançadas de **Machine Learning** e **Engenharia de Dados**. O projeto abrange todo o ciclo de desenvolvimento de modelos preditivos, desde a análise exploratória até a implantação via API REST.
+Sistema preditivo para avaliação de risco de crédito utilizando técnicas de **Machine Learning**. O projeto inclui preparação de dados, treinamento de modelos e uma API REST para predições.
 
-**Principais Funcionalidades:**
-- 🧠 Modelos de classificação com até **92% de acurácia**
-- ⚡ API para predições em tempo real
-- 📈 Dashboard interativo para análise de resultados
-- 🔍 Explicabilidade de decisões via SHAP e LIME
+---
 
 <p style="color: #ff4444; font-size: 14px;">
   <strong>Conformidade:</strong> Todos os dados sensíveis foram tratados de acordo com a <strong>LGPD</strong>, utilizando técnicas de anonimização e pseudonimização.
