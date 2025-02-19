@@ -12,52 +12,63 @@
 
 ## 📌 Sobre o Projeto
 
-Este repositório apresenta um **estudo de caso sobre previsão de churn (evasão de clientes)** em um serviço de streaming. O objetivo principal é **avaliar a probabilidade de churn nos próximos três meses** e, com base nessa previsão, implementar políticas e ações para evitar a perda de clientes.
-
-O projeto está dividido em duas partes principais:
-1. **Previsão de Churn:** Desenvolvimento de um modelo preditivo utilizando técnicas de machine learning.
-2. **Análise Não Supervisionada:** Análise comportamental dos clientes para identificar padrões e segmentos.
+O código fornecido é um exemplo completo de um pipeline de machine learning para avaliação de risco de crédito. Ele inclui etapas desde o carregamento e processamento de dados até o treinamento e avaliação de modelos, além de uma API para servir previsões de risco de crédito. Abaixo está uma explicação detalhada das principais seções do código:
 
 ---
 
 ## 🎯 Objetivo
 
-O objetivo deste estudo é **prever a evasão de clientes (churn)** e **entender os fatores que influenciam essa decisão**. Para isso, foram considerados os seguintes aspectos:
+O objetivo do código fornecido é criar um pipeline completo de machine learning para avaliação de risco de crédito. O pipeline inclui várias etapas, desde o carregamento e processamento de dados até o treinamento e avaliação de modelos, além de disponibilizar uma API para servir previsões de risco de crédito. As etapas detalhadas são:
 
-- **Definição do Alvo (Target):**
-  - O cliente está inativo?
-  - Cancelou seu plano?
-  - Não ouviu música nos últimos três meses?
+Configuração Inicial: Define as dependências do projeto no arquivo requirements.txt, garantindo que todas as bibliotecas necessárias estão instaladas com as versões corretas.
 
-- **Hipóteses Analisadas:**
-  - Comportamento histórico do cliente (valor da assinatura, quantidade de música ouvida).
-  - Características socioeconômicas (idade, gênero, cidade, canal de aquisição).
-  - Relação entre a quantidade de música ouvida no mês anterior e o churn.
-  - Dias desde o registro (clientes mais novos têm maior propensão ao churn?).
+Processamento de Dados: Inclui funções para carregar dados de diferentes fontes (banco de dados SQL e arquivos CSV), tratar valores faltantes e outliers, e dividir os dados em conjuntos de treino, validação e teste. Este processamento é essencial para preparar os dados para a modelagem.
+
+Engenharia de Features: Identifica os tipos de features (numéricas e categóricas), cria novas features a partir das existentes, e seleciona as features mais importantes. Também cria pipelines de pré-processamento para preparar as features para o treinamento dos modelos.
+
+Treinamento de Modelos: Inclui funções para treinar diferentes modelos de machine learning (Árvore de Decisão, Regressão Logística, Random Forest e XGBoost), avaliar esses modelos usando métricas padrão, e salvar/carregar modelos treinados. Também inclui métodos para explicar as predições dos modelos usando SHAP ou LIME.
+
+API para Consulta de Risco de Crédito: Configura uma API Flask para servir previsões de risco de crédito. A API possui endpoints para verificar a saúde do serviço (/health), realizar predições de risco de crédito (/predict), e explicar predições específicas (/explain). A API carrega o modelo treinado, o preprocessador e as configurações necessárias para realizar predições e fornecer explicações.
+
+Em resumo, o código visa fornecer uma solução completa e automatizada para a avaliação de risco de crédito, desde a preparação dos dados até a disponibilização de uma API para consumo externo.
 
 ---
 
 ## ⚙️ Solução Entregue
 
-### 1. **Modelo de Previsão de Churn**
-   - **Análise Exploratória:** Compreensão do comportamento dos dados e suas relações.
-   - **Seleção de Features:** Identificação das variáveis mais relevantes para o modelo.
-   - **Treinamento do Algoritmo:** Utilização de técnicas de machine learning para prever churn.
-   - **Hiperparametrização:** Ajuste dos parâmetros do modelo para melhorar a precisão.
-   - **Previsão e Conclusão:** Avaliação do modelo e interpretação dos resultados.
+A solução é um pipeline completo de machine learning para avaliação de risco de crédito, abordando:
 
-### 2. **Análise Não Supervisionada**
-   - **Normalização e PCA:** Redução da dimensionalidade dos dados.
-   - **Amostragem e K-means:** Segmentação dos clientes em grupos com comportamentos semelhantes.
+Configuração Inicial:
+
+Dependências listadas em requirements.txt.
+Processamento de Dados (data_processing.py):
+
+Carregamento de dados de SQL e CSV.
+Tratamento de valores faltantes e outliers.
+Divisão de dados em treino, validação e teste.
+Engenharia de Features (feature_engineering.py):
+
+Identificação e criação de features.
+Criação de pipelines de pré-processamento.
+Seleção de features importantes.
+Treinamento de Modelos (model_training.py):
+
+Treinamento de modelos (Árvore de Decisão, Regressão Logística, Random Forest, XGBoost).
+Avaliação e explicação das predições dos modelos.
+Salvamento e carregamento de modelos.
+API para Predições (app.py):
+
+API Flask com endpoints para verificar saúde, realizar predições e explicar predições.
 
 ---
 
 ## 📊 Resultados
 
-O projeto resultou em:
-- **Modelo Preditivo de Churn:** Capaz de identificar clientes com alta probabilidade de evasão.
-- **Segmentação de Clientes:** Identificação de grupos com comportamentos distintos.
-- **Insights Estratégicos:** Recomendações para reduzir a taxa de churn e melhorar a retenção de clientes.
+Automatização do pipeline de ML.
+Flexibilidade e extensibilidade.
+Explicabilidade das predições.
+Disponibilização de predições via API.
+
 
 ---
 
@@ -71,10 +82,29 @@ O projeto resultou em:
   <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL">
 </div>
 
-- **Linguagem de Programação:** [Python](https://www.python.org/)
-- **Bibliotecas:** Pandas, Scikit-learn, PySpark
-- **Banco de Dados:** SQL
-- **Ferramentas de Análise:** Jupyter Notebook, PCA, K-means
+### Linguagem:
+Python
+
+### Bibliotecas:
+pandas
+numpy
+scikit-learn
+xgboost
+flask
+matplotlib
+seaborn
+joblib
+sqlalchemy
+pytest
+shap
+lime
+jupyterlab
+
+### Banco de Dados:
+SQL (via SQLAlchemy)
+
+### Ferramenta de Análise:
+JupyterLab
 
 
 
