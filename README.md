@@ -28,22 +28,27 @@ Sistema preditivo para avaliação de risco de crédito em instituições financ
 
 ## 🚀 Principais Funcionalidades
 
-### 📊 Análise Exploratória (EDA)
-- Tratamento de dados faltantes e outliers
-- Visualização interativa de distribuições
-- Análise de correlação multivariada
+### 📊 Preparação de Dados
+- Carregamento de dados de múltiplas fontes (CSV, SQL)
+- Tratamento de valores faltantes (média, mediana, moda)
+- Identificação e tratamento de outliers
+- Sistema de logging para rastreamento de operações
 
 ### ⚙️ Engenharia de Features
-- Criação de variáveis sintéticas
-- Transformações não-lineares
-- Seleção automática de features
+- Preprocessamento automático de features numéricas e categóricas
+- Criação de novas features
+- Seleção de features importantes
 
-### 🤖 Modelagem Preditiva
-| Modelo                | AUC Score | Recall   | Precisão |
-|-----------------------|-----------|----------|----------|
-| XGBoost               | 0.93      | 0.88     | 0.91     |
-| Random Forest         | 0.91      | 0.85     | 0.89     |
-| Regressão Logística   | 0.89      | 0.82     | 0.87     |
+### 🤖 Modelos Implementados
+- Decision Tree
+- Random Forest
+- XGBoost
+- Regressão Logística
+
+### 🌐 API REST
+- Endpoint de health check
+- Predições em tempo real
+- Explicabilidade das predições (SHAP/LIME)
 
 ---
 
@@ -61,15 +66,6 @@ Sistema preditivo para avaliação de risco de crédito em instituições financ
 
 ---
 
-## 📊 Resultados e Impacto
-
-- **Redução de 40%** em inadimplências
-- **Economia anual estimada:** R$ 2.5M
-- Processamento de **50k solicitações/dia** via API
-- Tempo médio de predição: **120ms**
-
----
-
 ## 📄 Licença
 
 Distribuído sob licença MIT. Veja [LICENSE](LICENSE) para mais detalhes.
@@ -78,12 +74,10 @@ Distribuído sob licença MIT. Veja [LICENSE](LICENSE) para mais detalhes.
 
 ## 💻 Autor
 
-- **Felipe Bonatti** - [GitHub](https://github.com/felipesbonatti) | [LinkedIn](https://www.linkedin.com/in/felipebsdelima)
+- **Felipe Bonatti** - [GitHub](https://github.com/felipesbonatti) | [LinkedIn](https://www.linkedin.com/in/felipesbonatti/)
 
 <p align="center">
   <a href="https://github.com/felipesbonatti/Analise-de-Risco-de-Credito">
     <img src="https://img.shields.io/github/stars/felipesbonatti/Analise-de-Risco-de-Credito?style=social" alt="GitHub Stars">
   </a>
 </p>
-
-
