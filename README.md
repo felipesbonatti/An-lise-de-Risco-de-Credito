@@ -76,7 +76,7 @@ Distribuído sob licença MIT. Veja [LICENSE](LICENSE) para mais detalhes.
 
 ---
 
-## 👨💻 Autor
+## 💻 Autor
 
 - **Felipe Bonatti** - [GitHub](https://github.com/felipesbonatti) | [LinkedIn](https://www.linkedin.com/in/felipebsdelima)
 
