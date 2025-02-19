@@ -1,0 +1,39 @@
+# src/create_preprocessor.py
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.impute import SimpleImputer
+from sklearn.pipeline import Pipeline
+from sklearn.compose import ColumnTransformer
+import joblib
+
+def create_preprocessing_pipeline(numeric_cols, categorical_cols):
+    """
+    Cria um pipeline de pré-processamento para features numéricas e categóricas.
+    """
+    numeric_transformer = Pipeline(steps=[
+        ('imputer', SimpleImputer(strategy='median')),
+        ('scaler', StandardScaler())
+    ])
+
+    categorical_transformer = Pipeline(steps=[
+        ('imputer', SimpleImputer(strategy='most_frequent')),
+        ('onehot', OneHotEncoder(handle_unknown='ignore'))
+    ])
+
+    preprocessor = ColumnTransformer(
+        transformers=[
+            ('num', numeric_transformer, numeric_cols),
+            ('cat', categorical_transformer, categorical_cols)
+        ]
+    )
+    return preprocessor
+
+# Exemplo de uso:
+# Suponha que você já tenha identificado as colunas numéricas e categóricas
+numeric_cols = ['idade', 'renda', 'divida_total']
+categorical_cols = ['historico_credito']
+
+preprocessor = create_preprocessing_pipeline(numeric_cols, categorical_cols)
+
+# Salvar o preprocessador
+joblib.dump(preprocessor, "./models/trained_models/preprocessor.joblib")
+print("Preprocessador salvo em ./models/trained_models/preprocessor.joblib")
