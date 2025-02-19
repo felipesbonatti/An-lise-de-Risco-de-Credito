@@ -1,101 +1,97 @@
-# 🏦 Análise de Risco de Crédito - Sistema Preditivo
+# 📊 Análise de Risco de Crédito
 
 [![GitHub last commit](https://img.shields.io/github/last-commit/felipesbonatti/Analise-de-Risco-de-Credito?style=flat-square)](https://github.com/felipesbonatti/Analise-de-Risco-de-Credito)
 [![GitHub repo size](https://img.shields.io/github/repo-size/felipesbonatti/Analise-de-Risco-de-Credito?style=flat-square)](https://github.com/felipesbonatti/Analise-de-Risco-de-Credito)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 <p align="center">
-  <img src="https://cdn-icons-png.flaticon.com/512/2981/2981413.png" alt="Risk Analysis" width="150">
+  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Logo GitHub" width="100">
 </p>
 
 ---
 
-## 📌 Visão Geral do Projeto
+## 📌 Sobre o Projeto
 
-Sistema preditivo para avaliação de risco de crédito em instituições financeiras, desenvolvido com técnicas avançadas de **Machine Learning** e **Engenharia de Dados**. O projeto abrange todo o ciclo de desenvolvimento de modelos preditivos, desde a análise exploratória até a implantação via API REST.
+Este repositório contém um projeto de **Análise de Risco de Crédito**, desenvolvido para avaliar e prever o risco associado à concessão de crédito a clientes. O objetivo é fornecer uma solução robusta e eficiente para auxiliar instituições financeiras na tomada de decisões estratégicas, minimizando riscos e maximizando a rentabilidade.
 
-**Principais Funcionalidades:**
-- 🧠 Modelos de classificação com até **92% de acurácia**
-- ⚡ API para predições em tempo real
-- 📈 Dashboard interativo para análise de resultados
-- 🔍 Explicabilidade de decisões via SHAP e LIME
+O projeto utiliza técnicas avançadas de **análise de dados** e **machine learning** para identificar padrões e prever a probabilidade de inadimplência, garantindo uma gestão de crédito mais segura e eficaz.
 
-<p style="color: #ff4444; font-size: 14px;">
-  <strong>Conformidade:</strong> Todos os dados sensíveis foram tratados de acordo com a <strong>LGPD</strong>, utilizando técnicas de anonimização e pseudonimização.
+<p style="color: red; font-size: 14px;">
+  <strong>Observação:</strong> Por questões de conformidade com a <strong>Lei Geral de Proteção de Dados (LGPD)</strong>, os dados utilizados neste projeto foram anonimizados e adaptados para fins educacionais.
 </p>
 
 ---
 
-## 🚀 Principais Funcionalidades
+## 🎯 Objetivo
 
-### 📊 Análise Exploratória (EDA)
-- Tratamento de dados faltantes e outliers
-- Visualização interativa de distribuições
-- Análise de correlação multivariada
+O principal objetivo deste projeto é **desenvolver um modelo preditivo de risco de crédito** que:
 
-### ⚙️ Engenharia de Features
-- Criação de variáveis sintéticas
-- Transformações não-lineares
-- Seleção automática de features
-
-### 🤖 Modelagem Preditiva
-| Modelo                | AUC Score | Recall   | Precisão |
-|-----------------------|-----------|----------|----------|
-| XGBoost               | 0.93      | 0.88     | 0.91     |
-| Random Forest         | 0.91      | 0.85     | 0.89     |
-| Regressão Logística   | 0.89      | 0.82     | 0.87     |
-
-
-```
+- **Identifica clientes com maior probabilidade de inadimplência**.
+- **Fornece insights estratégicos** para a tomada de decisões.
+- **Minimiza riscos financeiros** através de uma análise detalhada e precisa.
 
 ---
 
-## 🛠 Stack Tecnológica
+## ⚙️ Solução Entregue
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px;">
-  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
-  <a href="https://scikit-learn.org/"><img src="https://img.shields.io/badge/Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn"></a>
-  <a href="https://pandas.pydata.org/"><img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"></a>
-  <a href="https://xgboost.ai/"><img src="https://img.shields.io/badge/XGBoost-017CEE?style=for-the-badge&logo=xgboost&logoColor=white" alt="XGBoost"></a>
-  <a href="https://flask.palletsprojects.com/"><img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask"></a>
-  <a href="https://www.sqlalchemy.org/"><img src="https://img.shields.io/badge/SQLAlchemy-1C1C1C?style=for-the-badge&logo=sqlalchemy&logoColor=white" alt="SQLAlchemy"></a>
-  <a href="https://shap.readthedocs.io/"><img src="https://img.shields.io/badge/SHAP-FF6F61?style=for-the-badge&logo=python&logoColor=white" alt="SHAP"></a>
+A solução desenvolvida inclui:
+
+### 1. **Análise Exploratória de Dados**
+   - Exploração e limpeza dos dados para garantir a qualidade das análises.
+   - Identificação de padrões e correlações entre variáveis.
+
+### 2. **Modelagem Preditiva**
+   - Desenvolvimento de modelos de machine learning para prever o risco de crédito.
+   - Avaliação e seleção do melhor modelo com base em métricas de desempenho.
+
+### 3. **Visualização de Dados**
+   - Criação de gráficos e dashboards para facilitar a interpretação dos resultados.
+   - Geração de relatórios detalhados para análise estratégica.
+
+---
+
+## 📊 Resultados
+
+O modelo desenvolvido trouxe os seguintes benefícios:
+
+- **Precisão na Previsão:** Alta acurácia na identificação de clientes com risco de inadimplência.
+- **Redução de Riscos:** Minimização de perdas financeiras através de uma análise robusta.
+- **Tomada de Decisão Informada:** Insights valiosos para a gestão de crédito.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
+  <img src="https://img.shields.io/badge/Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn">
+  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white" alt="Matplotlib">
+  <img src="https://img.shields.io/badge/Seaborn-4B77BE?style=for-the-badge&logo=seaborn&logoColor=white" alt="Seaborn">
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter">
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
 </div>
 
----
-
-## 🧩 Estrutura do Projeto
-
-
-
----
-
-
-```
-
----
-
-## 📊 Resultados e Impacto
-
-- **Redução de 40%** em inadimplências
-- **Economia anual estimada:** R$ 2.5M
-- Processamento de **50k solicitações/dia** via API
-- Tempo médio de predição: **120ms**
+- **Linguagem de Programação:** [Python](https://www.python.org/)
+- **Bibliotecas:** [Pandas](https://pandas.pydata.org/), [NumPy](https://numpy.org/), [Scikit-Learn](https://scikit-learn.org/), [Matplotlib](https://matplotlib.org/), [Seaborn](https://seaborn.pydata.org/)
+- **Ferramentas de Análise:** [Jupyter Notebook](https://jupyter.org/)
+- **Controle de Versão:** [Git](https://git-scm.com/)
 
 ---
 
 ## 📄 Licença
 
-Distribuído sob licença MIT. Veja [LICENSE](LICENSE) para mais detalhes.
+Este projeto está licenciado sob a licença MIT. Para mais detalhes, consulte o arquivo [LICENSE](LICENSE).
 
 ---
 
-## 👨💻 Autor
+## 👨‍💻 Autor
 
 - **Felipe Bonatti** - [GitHub](https://github.com/felipesbonatti) | [LinkedIn](https://www.linkedin.com/in/felipesbonatti/)
 
+---
+
 <p align="center">
-  <a href="https://github.com/felipesbonatti/Analise-de-Risco-de-Credito">
-    <img src="https://img.shields.io/github/stars/felipesbonatti/Analise-de-Risco-de-Credito?style=social" alt="GitHub Stars">
-  </a>
+  <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Logo GitHub" width="100">
 </p>
