@@ -74,7 +74,7 @@ Distribuído sob licença MIT. Veja [LICENSE](LICENSE) para mais detalhes.
 
 ## 💻 Autor
 
-- **Felipe Bonatti** - [GitHub](https://github.com/felipesbonatti) | [LinkedIn](https://www.linkedin.com/in/felipesbonatti/)
+- **Felipe Bonatti** - [GitHub](https://github.com/felipesbonatti) | [LinkedIn](https://www.linkedin.com/in/felipebsdelima)
 
 <p align="center">
   <a href="https://github.com/felipesbonatti/Analise-de-Risco-de-Credito">
