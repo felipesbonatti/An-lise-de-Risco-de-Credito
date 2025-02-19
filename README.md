@@ -75,7 +75,7 @@ curl -X POST http://api.riscocredito.com/predict \
 
 
 
-## 📊 Resultados e Impacto
+### 📊 Resultados e Impacto
 
 - **Redução de 40%** em inadimplências
 - **Economia anual estimada:** R$ 2.5M
@@ -84,13 +84,13 @@ curl -X POST http://api.riscocredito.com/predict \
 
 ---
 
-## 📄 Licença
+### 📄 Licença
 
 Distribuído sob licença MIT. Veja [LICENSE](LICENSE) para mais detalhes.
 
 ---
 
-## 💻 Autor
+### 💻 Autor
 
 - **Felipe Bonatti** - [GitHub](https://github.com/felipesbonatti) | [LinkedIn](https://www.linkedin.com/in/felipesbonatti/)
 
