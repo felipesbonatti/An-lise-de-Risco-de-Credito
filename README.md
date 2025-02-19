@@ -70,27 +70,7 @@ curl -X POST http://api.riscocredito.com/predict \
 
 ---
 
-## ⚡ Como Executar
 
-1. **Clonar Repositório**
-```bash
-git clone https://github.com/felipesbonatti/Analise-de-Risco-de-Credito.git
-cd Analise-de-Risco-de-Credito
-```
-
-2. **Instalar Dependências**
-```bash
-pip install -r requirements.txt
-```
-
-3. **Executar Pipeline Completo**
-```bash
-python src/main.py --config config_prod.yml
-```
-
-4. **Iniciar API**
-```bash
-flask run --host=0.0.0.0 --port=5000
 ```
 
 ---
