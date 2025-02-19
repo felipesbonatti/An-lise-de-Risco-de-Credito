@@ -1,0 +1,39 @@
+# src/train_decision_tree.py
+from sklearn.tree import DecisionTreeClassifier
+import joblib
+import os
+
+def train_decision_tree(X_train, y_train, **kwargs):
+    """
+    Treina um modelo de Árvore de Decisão.
+    """
+    params = {
+        'max_depth': 5,
+        'min_samples_split': 2,
+        'min_samples_leaf': 1,
+        'random_state': 42
+    }
+    params.update(kwargs)
+    model = DecisionTreeClassifier(**params)
+    model.fit(X_train, y_train)
+    return model
+
+def save_model(model, model_name, model_dir='./models/trained_models'):
+    """
+    Salva um modelo treinado.
+    """
+    os.makedirs(model_dir, exist_ok=True)
+    model_path = os.path.join(model_dir, f"{model_name}.joblib")
+    joblib.dump(model, model_path)
+    print(f"Modelo salvo em {model_path}")
+
+# Exemplo de uso:
+# X_train e y_train são seus dados de treino
+# Suponha que você já tenha carregado os dados
+# X_train, y_train = ...
+
+# Treinar Árvore de Decisão
+model_dt = train_decision_tree(X_train, y_train)
+
+# Salvar o modelo
+save_model(model_dt, "decision_tree_model")
